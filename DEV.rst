@@ -5,8 +5,12 @@ Official Jira REST API
 ----------------------
 https://developer.atlassian.com/server/jira/platform/rest-apis/
 
-jira
-----
+api-tokens:
+https://id.atlassian.com/manage/api-tokens
+
+
+jira (python lib)
+-----------------
 https://github.com/pycontribs/jira
 Jul 12, 2018
 1307 stars
@@ -20,8 +24,9 @@ print(issue.fields.project.key)            # 'JRA'
 print(issue.fields.issuetype.name)         # 'New Feature'
 print(issue.fields.reporter.displayName)   # 'Mike Cannon-Brookes [Atlassian]'
 
-atlassian-python-api
---------------------
+
+atlassian-python-api (python lib)
+---------------------------------
 https://github.com/atlassian-api/atlassian-python-api
 Feb 25, 2021
 540 stars
@@ -37,12 +42,30 @@ JQL - 'project - DEMO AND status IN ("To Do", "In Progress") ORDER BY issuekey'
 data - jira.jql(JQL)
 print(data)
 
-jira-cli
---------
+
+jira-cli (one-shot terminal tool)
+---------------------------------
 https://github.com/alisaifee/jira-cli
 https://jira-cli.readthedocs.io/en/master/intro.html
 Nov 23, 2020
 125 stars
+
+
+jiracli (interactive terminal tool)
+-----------------------------------
+https://github.com/pascalgn/jiracli
+
+jiracli> issues JRA-123 JRA-321 | filter -f key 'JRA-123' | print '${summary} [${status.name}]'
+jiracli> search "project=JRA and text~'new report'" | filter -e -f summary '^New report' | print
+jiracli> js "webService.getIssue('JRA-123')" | parse
+
+
+jiracli (python lib as one-shot terminal tool)
+----------------------------------------------
+https://github.com/toabctl/jiracli
+Jul 3, 2019
+145 Stars
+39 Forks
 
 notion-py
 ---------
@@ -63,3 +86,13 @@ print("The old title is:", page.title)
 
 # Note: You can use Markdown! We convert on-the-fly to Notion's internal formatted text data structure.
 page.title - "The title has now changed, and has *live-updated* in the browser!"
+
+
+Jira Client (desktop)
+---------------------
+https://almworks.com/jiraclient/features.html
+
+
+Uninteresting
+-------------
+https://github.com/go-jira/jira
