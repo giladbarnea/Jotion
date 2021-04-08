@@ -93,6 +93,26 @@ Jira Client (desktop)
 https://almworks.com/jiraclient/features.html
 
 
+jira-helper
+-----------
+https://github.com/kenjyco/jira-helper
+
+jira
+----
+https://pypi.org/project/jira/
+
+jira-333
+--------
+https://pypi.org/project/jira-333/
+
+watson-jira
+------------
+https://pypi.org/project/watson-jira/
+
+jira-extended
+-------------
+https://pypi.org/project/jira-extended/
+
 Uninteresting
 -------------
 https://github.com/go-jira/jira
